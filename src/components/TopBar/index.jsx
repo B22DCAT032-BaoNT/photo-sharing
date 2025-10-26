@@ -1,6 +1,6 @@
 import React from "react";
 import { AppBar, Toolbar, Typography } from "@mui/material";
-import { useMatch } from "react-router-dom";
+import { useMatch, Link } from "react-router-dom";
 
 import "./styles.css";
 import models from "../../modelData/models";
