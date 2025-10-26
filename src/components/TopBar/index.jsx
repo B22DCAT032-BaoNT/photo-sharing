@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, IconButton } from "@mui/material";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 import { useMatch } from "react-router-dom";
 
 import "./styles.css";
@@ -32,18 +32,12 @@ function TopBar() {
   return (
 
     <AppBar position="static">
-      <IconButton
-        component={Link}
-        to="/"
-        color="inherit"
-        aria-label="home"
-      >
-        <HomeIcon />
-      </IconButton>
       <Toolbar>
-        <Typography variant="h6" component="div">
-          {`${yourName}`}
-        </Typography>
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Typography variant="h6" component="div">
+            {yourName}
+          </Typography>
+        </Link>
 
         <div style={{ flexGrow: 1 }} />
 
