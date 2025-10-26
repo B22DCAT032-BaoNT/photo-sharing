@@ -1,0 +1,11 @@
+/* src/components/UserList/styles.css */
+.MuiListItem-root {
+  color: #e5e5e5 !important; /* Đảm bảo màu chữ trong danh sách */
+}
+.MuiListItem-root a {
+  color: #e5e5e5 !important; /* Màu chữ cho link trong list item */
+  text-decoration: none; /* Bỏ gạch chân mặc định của link */
+}
+.MuiListItem-root a:hover {
+  background-color: #333333; /* Hiệu ứng hover cho item */
+}
