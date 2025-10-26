@@ -1,6 +1,6 @@
 import React from "react";
-import { AppBar, Toolbar, Typography } from "@mui/material";
-import { useMatch } from "react-router-dom"; // 1. Nhập hook useMatch
+import { AppBar, Toolbar, Typography, IconButton } from "@mui/material";
+import { useMatch } from "react-router-dom";
 
 import "./styles.css";
 import models from "../../modelData/models";
@@ -30,7 +30,16 @@ function TopBar() {
   }
 
   return (
+
     <AppBar position="static">
+      <IconButton
+        component={Link}
+        to="/"
+        color="inherit"
+        aria-label="home"
+      >
+        <HomeIcon />
+      </IconButton>
       <Toolbar>
         <Typography variant="h6" component="div">
           {`${yourName}`}
